@@ -3,9 +3,6 @@ shared:
   steps:
     - init: echo 'init'
 jobs:
-  on-pr-close:
-    requires:
-      - ~pr-closed
   component:
     requires: [~pr, ~commit]
   publish:
